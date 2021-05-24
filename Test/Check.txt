@@ -1,0 +1,97 @@
+﻿
+  Check-list for Sign in
+     
+  Smoke test:
+      1. Check default value
+      2. Enter in the Имя Фамилия fields correct name and last name
+      3. Register a new user with a valid email/phone number and password
+      4. Check the registration confirmation letter in the mail 
+      5. Enter the fields with the correct data, press the Enter on the keyboard instead of in     
+      6. Leave the fields empty
+ 
+  Critical path test:
+      7. Enter email without @
+      8. Enter email without a dot   
+      9. Enter in the Имя Фамилия fields all letters of the same register olga mikheeva or OLGA MIKHEEVA
+      10. Fill in the fields with the maximum number of characters spaced +1 
+      11. Fill in the fields with the minimum number of characters spaced -1     
+      12. Register a new user with the Имя Ol_ga
+      13. Register a new user with the Имя Ol-ga
+      14. Register a new user with the Имя Olga123
+      15. Register a new user with the Имя Olga@
+      16. Register a new user with the name Olga Mikheeva and the password Olga Mikheeva
+      17. Enter the Имя field starting/ending with spaces
+      18. Register a new user with the last name Mikh ee va
+      19. egister a new user with a name and last name consisting of only space
+      20. Register a new user with a password containing spaces or consisting only of spaces
+      21. Leave the password field blank. Click on Sign in
+      22. Check work with unstable wi-fi signal
+      23. Is there a warning that the password is too simple
+      
+   Extended test:
+      24. Enter in the Имя/Фамилия fields a complex sequence of special symbols-"�%;?()[]{}
+      25. Enter the copied text in Фамилия field field
+      26. Enter the Имя/Фамилия fields using letters of different case
+      27. egister a new user with a password containing SQL injection
+      28. Enter the script in the password field
+      29. Enter html tags in the password field
+      30. Register a new user with the name Olga Mikheeva, where O and M are entered from not English
+      31. Is it possible to submit a form without selecting any radio-buttons
+
+   Check-list for Log in
+
+   Smoke test:
+       1. Check default value
+       2. Enter the correct email/phone number and correct password
+       3. Enter the correct email/phone and incorrect password
+       4. Enter incorrect email/phone, but correct password
+       5. Enter incorrect email/phone and incorrect password
+
+   Critical path test:
+       6. Fill in the Password field with the maximum number of characters spaced +1 
+       7. Fill in the Password field with the minimum number of characters spaced -1 
+       8. Paste the copied correct email/phone and password into the login and password field
+       9. Login with correct data and press the "Back" button in the browser
+       10. Enter the correct login and specify the password using letters of different case
+       11. Enter correct password Login in two browsers with the same valid name. Exit the first browser and enter the second and try to do what only a logged in user can do
+       12. Enter valid data in the fields, click the Log in button, turn off the Internet. Connect the Internet, go to the site. Is the account blocked if the wrong password is entered many times?
+       13. Enter the phone number from the additional panel on the keyboard
+       14. Check there is a limit on the total number of unsuccessful attempts         
+       15. Check work with unstable wi-fi signal
+       16. Enter a different password in the Confirm password field
+
+    Extended test:
+       17. Try to paste a picture/photo in the login and password field
+       18. Paste the copied correct username and password into the login and password field
+       19. Check if the field value has been restored correctly after reloading the page
+       20. Check how the system reacts to the "forward" and "back" buttons after authorization? What about after the logout?
+       21. Check the back button in the browser should not return an unauthorized user back to being authorized
+
+  Check-list Forgot password
+    
+    Smoke test:
+       1. Enter correct phone number
+       2. Enter correct email
+       3. Log in with the correct phone number and password. Change password. Login with a new password
+       4. Check the password change letter by email
+
+    Critical path test:
+       5. Enter a password consisting of uppercase or lowercase 
+       6. Change your password and log in with the old password
+       7. Enter email using letters of another language
+       8. Enter in the field not numbers, but text
+       9. Leave the fields empty
+       10. Enter the number + 372-29-640-61-29
+       11. Enter phone number with alrhabets or cpecial characters
+       12. Enter a phone number that does not match the expected format
+       13. Enter a phone number with spaces - before/in the middle/after the numbers
+       14. Check the field for max/min number of digits
+   
+    Extended test:
+       15. Enter decimal
+       16. Try to enter a date instead of a phone number 
+       17. Enter fractional numbers with different divisions ./,
+       18. Enter negative numbers
+       19. Log in from different devices. Exit one and check if it is possible to perform actions that can only be performed by a logged in user
+ 
+
