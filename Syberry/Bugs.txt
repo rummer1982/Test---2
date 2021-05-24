@@ -1,0 +1,64 @@
+Bugs
+
+1. Summary - A part of code text {show filter text} is visible when navigating through the menu categories in the mob version of the app.
+   Description: Actual result - When the user navigating to the site menu section on the page, the {show filter text} caption hangs for a few seconds instead of Sort by. Expected result - When navigating to the site menu section on the page, you can see just Sort by.
+   STR - Go to the food delivery website
+         Select menu item Rolls
+         Select menu item Soups 
+   Severity - minor
+
+2. Summary - Cut off the button with the inscription "Sho(w order") in the pop-up after ordering the product in the mob version of the app.
+   Description: Actual result - When the user proceeds to checkout on the food delivery website, part of the button is cut off and the inscription "Sho(w order") on it. Expected result - When the user proceeds to checkout on the food delivery site, a button with the inscription "Show order" is visible in the pop-up
+   STR - Go to the food delivery website
+         Make an order on the website
+         Checkout in a pop-up
+   Severity - medium
+
+3. Summary - Did not receive an email with confirmation of registration on the web site.
+   Description: Actual result - When the user goes to the e-mail to check the confirmation of registration on the site, it is not there. Expected result - the user finds a letter in the e-mail confirming registration on the site
+   STR - Register on the website
+         Go to your e-mail
+   Severity - major
+
+4. Summary - The amount in the shopping cart is not recalculated after adding products.
+   Description: Actual result - After adding several products to the shopping cart, the total amount of the order is calculated. Expected result - After adding several products to the shopping cart, the total amount of the order is not calculated.
+   STR - Go to the food delivery website
+         Order several products on the website
+         Go to the shopping cart
+   Severity - major
+
+5. Summary - User can enter all the data in the fields for food delivery on the web site when the Internet is off.
+   Description: Actual result - Going to ordering things and turning off the Internet, you can fill in all the fields in the delivery section. Expected result - After disconnecting the Internet, an inscription should appear "Check your Internet connection"
+   STR - Fill in the Street field
+         Disable internet
+         Try to fill in the House field
+         Try to fill in the Apartment field
+         Try to fill in the field Contacts
+   Severity - major
+
+6. Summary - Photos on the website are not stretched to fit the site page in the mob version of the app.
+   Description: Actual result - Photos on the website are not stretched to fit the site page in the mob version of the app. Expected result - Photos on the website are stretched to fit the site page in the mob version of the app. 
+   STR - Go to the flowers delivery website
+   Severity - minor
+
+7. Summary - Sorting by price doesn't work on the website.
+   Description: Actual result - Sorting by price in ascending and descending order does not work. Expected result - Sorting by price in ascending and descending order works.
+   STR - Go on the website
+         Select some catalog section
+         Set Sort by price ascending
+         Sort by price descending
+   Severity - medium
+
+8. Summary - It is impossible to return to the main page from the sections of the site by clicking on the logo in the header.
+   Description: Actual result - It is impossible to return from the catalog pages to the main page by clicking on the logo in the site header. Expected result - The user can return to the main page of the site from any section of the catalog by clicking on the logo.
+   STR - Go on the website
+         Go to the some catalog section
+         Click on the logo in the header
+   Severity - major
+
+9. Summary - The item is not added to the shopping cart after ordering
+   Description: Actual result - The selected item does not appear in the shopping cart. Expected result - The selected item appears in the shopping cart.
+   STR - Go on the website
+         Select a product
+         Add it to shopping cart
+   Severity - major
